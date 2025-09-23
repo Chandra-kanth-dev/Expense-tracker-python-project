@@ -1,4 +1,3 @@
-Here’s a professional README.md for your Expense Tracker project:
 
 # Expense Tracker
 
