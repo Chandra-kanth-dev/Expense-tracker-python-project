@@ -83,6 +83,6 @@ License
 
 This project is licensed under the MIT License.
 
-database_schema
-<img width="740" height="542" alt="image" src="https://github.com/user-attachments/assets/ae2a9200-096e-42d3-9e9f-9d99199b4989" />
+database_schema source:
+ src="https://github.com/user-attachments/assets/ae2a9200-096e-42d3-9e9f-9d99199b4989" 
 
