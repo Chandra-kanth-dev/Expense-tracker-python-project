@@ -173,7 +173,7 @@ def run_summaries():
                     print(s)
             elif choice == "3":   
                 user_id = int(input("Enter user ID: "))
-                result = expense_service.get_overall_summary(user_id)
+                result = summary_service.get_overall_summary(user_id)
                 print("\n--- Overall Summary ---")
                 print(f"Months Tracked: {result['months_tracked']}")
                 print(f"Total Salary: {result['total_salary']}")
@@ -206,3 +206,4 @@ if __name__ == "__main__":
             break
         else:
             print("Invalid choice. Try again.")
+
