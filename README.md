@@ -10,7 +10,7 @@ The **Expense Tracker** is a Python-based CLI application that helps users manag
 - **Category Management:** Add, delete, and list expense categories.
 - **Expense Management:** Add, update, delete, and view expenses.
 - **Monthly Summaries:** Automatically calculates total expenses, savings, and salary tracking for each month.
-- **Menu-Driven CLI:** Easy-to-use command-line interface for all operations.
+- **Menu-Driven :** Easy-to-use menu for all operations.
 - **Error Handling:** Prevents invalid input, duplicate entries, and ensures proper validation.
 
 ## Technology Stack
