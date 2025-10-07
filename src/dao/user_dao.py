@@ -1,5 +1,7 @@
 # src/dao/users_dao.py
+import email
 from typing import Optional, List, Dict
+from urllib import response
 from src.config.supabase_client import get_supabase
 
 class UserDAO:
@@ -41,3 +43,7 @@ class UserDAO:
 
         response = self.sb.table(self.table_name).select("*").execute()
         return response.data
+    def get_user_by_email(self, email: str):
+        response = self.sb.table(self.table_name).select("*").eq("email", email).execute()
+        return response.data[0] if response.data else None
+

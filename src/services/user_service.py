@@ -1,4 +1,5 @@
 # src/service/user_service.py
+import email
 from typing import List, Dict, Optional
 from src.dao.user_dao import UserDAO
 
@@ -66,3 +67,9 @@ class UserService:
         if not users:
             raise ValueError("No users found.")
         return users
+    def get_user_by_email(self, email: str):
+        user = self.dao.get_user_by_email(email)
+        if not user:
+            raise ValueError(f"No user found with email {email}")
+        return user
+

@@ -3,6 +3,8 @@ from datetime import datetime
 from typing import List, Dict
 from src.config.supabase_client import get_supabase
 
+
+
 class MonthlySummaryDAO:
     def __init__(self):
         self.sb = get_supabase()
@@ -66,7 +68,7 @@ class MonthlySummaryDAO:
         return result.data
     def get_all_summaries(self, user_id: int) -> list[Dict]:
         return (
-        self._sb()
+        self.sb
         .from_("monthly_summary")
         .select("*")
         .eq("user_id", user_id)

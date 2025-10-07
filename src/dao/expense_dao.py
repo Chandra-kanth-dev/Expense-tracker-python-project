@@ -4,6 +4,8 @@ class ExpenseDAO:
     def __init__(self):
         self.sb = get_supabase()
 
+
+
     def add_expense(self, user_id: int, category_id: int, amount: float, expense_date):
 
         return self.sb.table('expenses').insert({
